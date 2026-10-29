@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tomar’s Griha Pravesh — A New Home, A Blessed Beginning</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%235a0f1a'/%3E%3Cpath d='M10 38q22 22 44 0z' fill='%23d4a73a'/%3E%3Cpath d='M32 36c-9-9-3-17 0-28 3 11 9 19 0 28z' fill='%23ffb02e'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Tiro+Devanagari+Hindi&display=swap">
+<style>
+:root{--gold:#d4a73a;--gold2:#f3d77a;--mar:#5a0f1a;--mar2:#32060d;--ivory:#fbf3df;--ink:#2a140c;--green:#2f4a33;--wa:#1f8f4e;
+--serif:'Cormorant Garamond',Georgia,'Times New Roman',serif;--hi:'Tiro Devanagari Hindi','Noto Serif Devanagari',Georgia,serif;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--ivory:#f1e5c6}}
+:root[data-theme="dark"]{--ivory:#f1e5c6}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--mar2);color:var(--ivory);font:20px/1.6 var(--serif)}
+body.locked{overflow:hidden}
+h1,h2,h3,p{margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold2);outline-offset:3px}
+.hi{font-family:var(--hi)}
+.wrap{max-width:1000px;margin:auto;padding:72px 22px}
+section{position:relative}
+.sec-dark{background:radial-gradient(ellipse at top,#6e1624,var(--mar2) 70%)}
+h2{font-size:clamp(28px,5vw,44px);text-align:center;color:var(--gold2);letter-spacing:.04em;line-height:1.2;font-weight:600;margin-bottom:12px}
+.lead{max-width:640px;margin:0 auto;text-align:center;font-size:1.1em}
+.orn{display:block;margin:0 auto 22px;width:220px;height:18px}
+.btn{display:inline-block;font:600 17px var(--serif);letter-spacing:.12em;padding:14px 28px;border-radius:40px;border:2px solid var(--gold);background:linear-gradient(180deg,#f7dd86,#c99a2a);color:#3a0810;text-decoration:none;cursor:pointer;box-shadow:0 0 22px rgba(243,215,122,.35);transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 0 34px rgba(243,215,122,.6)}
+.btn.ghost{background:transparent;color:var(--gold2)}
+.btn.wa{background:linear-gradient(180deg,#27b562,var(--wa));color:#fff;border-color:var(--gold2);font-size:18px}
+/* intro */
+#intro{position:fixed;inset:0;z-index:50;overflow:hidden;background:transparent}
+#glow{position:absolute;inset:0;background:radial-gradient(circle at 50% 50%,#fff3b8,#f0b73c 35%,#a0601a 75%);opacity:0;transition:opacity 1s}
+.door{position:absolute;top:0;bottom:0;width:50%;background:
+ radial-gradient(circle at 50% 50%,rgba(255,255,255,.12),transparent 60%),
+ linear-gradient(90deg,#6b4a0e,#e4bf55 45%,#8f6a14);transition:transform 2.2s cubic-bezier(.65,0,.25,1);box-shadow:inset 0 0 0 6px #5a3d08,inset 0 0 0 10px #f0d27a}
+.door::before{content:"";position:absolute;inset:7% 9%;border:3px solid #5a3d08;border-radius:50% 50% 6px 6px/22% 22% 6px 6px;background:repeating-linear-gradient(45deg,rgba(90,15,26,.55) 0 10px,rgba(90,15,26,.35) 10px 20px);box-shadow:inset 0 0 0 5px rgba(243,215,122,.55)}
+.door::after{content:"";position:absolute;top:50%;width:46px;height:46px;margin-top:-23px;border-radius:50%;border:5px solid #f7dd86;background:radial-gradient(#8f6a14,#3a2504);box-shadow:0 3px 8px #0008}
+#dl{left:0;transform-origin:left center}#dl::after{right:12px}
+#dr{right:0;transform-origin:right center}#dr::after{left:12px}
+#intro.open #dl{transform:perspective(1400px) rotateY(-105deg)}
+#intro.open #dr{transform:perspective(1400px) rotateY(105deg)}
+#intro.open #glow{opacity:1}
+#intro.open .ic{opacity:0;transform:scale(1.06)}
+#intro.gone{opacity:0;transition:opacity 1s;pointer-events:none}
+.ic{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:24px;transition:opacity .8s,transform .8s;text-shadow:0 0 18px #000a}
+.mantra{font-family:var(--hi);font-size:clamp(34px,8vw,84px);line-height:1.25;color:var(--gold2);text-shadow:0 0 14px #ffb02e,0 0 40px #e07a10,0 3px 8px #000;animation:glow 4s ease-in-out infinite;background:rgba(50,6,13,.62);padding:8px 26px;border-radius:24px}
+.sub{font-family:var(--hi);font-size:clamp(20px,4vw,34px);color:#ffe6a0;margin:12px 0 30px;background:rgba(50,6,13,.62);padding:2px 18px;border-radius:16px}
+@keyframes glow{50%{text-shadow:0 0 22px #ffd36a,0 0 60px #ff9c1a,0 3px 8px #000}}
+.garland{position:absolute;top:0;left:0;right:0;height:26px;background:radial-gradient(circle at 12px 12px,#ffc21a 7px,#ff8a00 9px,transparent 10px) 0 0/24px 26px repeat-x;filter:drop-shadow(0 4px 4px #0008)}
+.bells{position:absolute;top:24px;left:0;right:0;display:flex;justify-content:space-around;pointer-events:none}
+.bell{width:34px;transform-origin:top center;animation:sway 3.6s ease-in-out infinite}
+.bell:nth-child(2n){animation-delay:-1.4s}
+@keyframes sway{50%{transform:rotate(9deg)}0%,100%{transform:rotate(-9deg)}}
+.diyas{position:absolute;bottom:14px;left:0;right:0;display:flex;justify-content:space-around;align-items:flex-end;pointer-events:none}
+.diya{width:64px;height:54px;animation:flick 1.7s infinite;filter:drop-shadow(0 0 12px #ffa51f)}
+.diya:nth-child(2n){animation-delay:-.8s}
+@keyframes flick{0%,100%{filter:drop-shadow(0 0 10px #ffa51f) brightness(1)}30%{filter:drop-shadow(0 0 20px #ffc34d) brightness(1.2)}60%{filter:drop-shadow(0 0 8px #ff8a00) brightness(.92)}}
+.rangoli{position:absolute;bottom:-60px;left:50%;width:220px;margin-left:-110px;opacity:.85;animation:spin 60s linear infinite;pointer-events:none}
+@keyframes spin{to{transform:rotate(360deg)}}
+#fx{position:fixed;inset:0;pointer-events:none;z-index:51;overflow:hidden}
+#fx i{position:absolute;top:-20px;border-radius:50%;background:var(--gold2);box-shadow:0 0 8px var(--gold2);animation:fall linear infinite;opacity:.8}
+#fx i.p{border-radius:60% 0 60% 0;background:#ff9f1a;box-shadow:none}
+@keyframes fall{to{transform:translate(var(--dx),108vh) rotate(360deg)}}
+.ganesh{margin-bottom:10px}.ganesh svg,.ganesh img{width:clamp(84px,18vh,130px);height:auto;display:block;margin:auto;filter:drop-shadow(0 0 14px #ffb02e)}.gname{font-family:var(--hi);font-size:clamp(22px,4.4vw,34px);color:#ffe6a0;background:rgba(50,6,13,.62);padding:2px 18px;border-radius:14px;margin-top:6px;text-shadow:0 0 14px #ffb02e}.gen{font-family:var(--serif);font-size:clamp(16px,2.8vw,22px);letter-spacing:.14em;margin-top:4px;text-shadow:none}
+#enter,.skip{font-family:var(--hi);letter-spacing:0}
+.skip{margin-top:20px;background:none;border:0;color:#ffe6a0;font:inherit;text-decoration:underline;cursor:pointer;font-size:16px}
+#snd{position:fixed;top:calc(env(safe-area-inset-top,0px) + 10px);right:10px;z-index:60;width:44px;height:44px;border-radius:50%;border:2px solid var(--gold);background:rgba(50,6,13,.85);color:var(--gold2);font-size:20px;cursor:pointer}
+/* hero */
+#hero{min-height:100vh;display:flex;align-items:center;background:radial-gradient(ellipse at 50% 30%,#7d1b2b,var(--mar2) 72%);text-align:center}
+#hero h1{font-size:clamp(34px,8vw,76px);letter-spacing:.08em;color:var(--gold2);line-height:1.1;font-weight:700;opacity:0;transition:opacity 2s .6s;text-shadow:0 2px 24px #e8a020aa}
+body.entered #hero h1,body.entered .hsub{opacity:1}
+.hsub{font-size:clamp(20px,3.5vw,30px);font-style:italic;opacity:0;transition:opacity 2s 1.2s;margin:8px 0 20px}
+.circuit{width:min(380px,80%);margin:0 auto 10px;display:block}
+.circuit path{fill:none;stroke:var(--gold);stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1;stroke-dashoffset:1}
+.circuit .h{stroke:var(--gold2);stroke-width:3.5}
+body.entered .circuit path{animation:draw 3.2s ease forwards}
+body.entered .circuit .h{animation-delay:1.6s}
+@keyframes draw{to{stroke-dashoffset:0}}
+.msg{max-width:660px;margin:0 auto 28px;font-size:1.12em;display:grid;gap:14px}
+.btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+/* blessings */
+.grid4{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:26px;margin:36px 0}
+.frame{border:4px double var(--gold);border-radius:110px 110px 12px 12px;padding:14px;background:radial-gradient(circle at 50% 35%,#7a2030,#3a0810);text-align:center;box-shadow:0 0 28px rgba(212,167,58,.25)}
+.frame svg,.frame img{width:100%;height:190px;object-fit:cover;border-radius:90px 90px 6px 6px;display:block;margin-bottom:10px;animation:aura 5s ease-in-out infinite}
+@keyframes aura{50%{filter:drop-shadow(0 0 14px #f3d77a)}}
+.frame b{display:block;font-size:1.3em;color:var(--gold2)}
+.frame span{font-family:var(--hi);color:#ffe6a0}
+/* home */
+#home{background:linear-gradient(var(--mar2),#3d1a10 60%,var(--mar2))}
+.photo{position:relative;max-width:620px;margin:30px auto;border:5px double var(--gold);border-radius:12px;overflow:hidden;background:#2a140c}
+.photo svg,.photo img{display:block;width:100%;height:auto}
+#plx{will-change:transform}
+/* cards */
+.cards{display:grid;gap:28px}
+.card{background:var(--ivory) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40'%3E%3Ccircle cx='20' cy='20' r='2' fill='%23d4a73a' fill-opacity='.25'/%3E%3C/svg%3E");color:var(--ink);border:3px solid var(--gold);outline:2px solid var(--gold);outline-offset:-12px;border-radius:14px;padding:36px 30px;text-align:center;box-shadow:0 10px 40px #0008;position:relative}
+.card h3{font-size:clamp(24px,4vw,34px);color:var(--mar);line-height:1.2;margin:6px 0 10px}
+.card .date{font-size:1.5em;font-weight:700;color:var(--mar)}
+.card p{max-width:560px;margin:12px auto}
+.card.lunch{background-color:#f6e2b0;border-color:var(--green);outline-color:var(--green)}
+.card.lunch h3{color:var(--green)}
+.icon{width:62px;height:62px;margin:auto}
+.meta{display:flex;justify-content:center;gap:10px 26px;flex-wrap:wrap;font-weight:600;font-size:1.08em}
+.pill{display:inline-block;background:var(--mar);color:var(--gold2);padding:2px 16px;border-radius:30px}
+.note{background:rgba(212,167,58,.18);border-left:4px solid var(--gold);padding:10px 14px;text-align:left;border-radius:6px;font-size:.95em;max-width:560px;margin:14px auto 0}
+.thali{width:150px;margin:6px auto;animation:spin 40s linear infinite}
+.summary{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin:0 0 28px}
+.summary div{border:2px solid var(--gold);border-radius:10px;padding:12px 16px;text-align:center;background:rgba(0,0,0,.25)}
+.summary b{color:var(--gold2);display:block;font-size:1.2em}
+/* venue / rsvp */
+#venue{background:linear-gradient(var(--mar2),#14301c 140%)}
+.pin{width:54px;margin:0 auto 6px;display:block}
+form{display:grid;gap:14px;max-width:520px;margin:30px auto 0;text-align:left}
+label{font-weight:600;color:var(--gold2)}
+input,textarea{width:100%;padding:12px 14px;border-radius:10px;border:2px solid var(--gold);background:var(--ivory);color:var(--ink);font:inherit}
+.center{text-align:center;margin-top:26px}
+.small{font-size:.85em;opacity:.8;text-align:center;margin-top:10px}
+/* closing */
+#close{text-align:center;overflow:hidden;background:radial-gradient(ellipse at 50% 100%,#8a3a12,var(--mar2) 65%)}
+#close .mantra{display:inline-block;margin-bottom:22px}
+.sign{font-size:1.5em;color:var(--gold2);font-weight:700;margin:6px 0 24px}
+.final{font-size:1.1em;letter-spacing:.06em;margin-bottom:26px}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition-duration:.01ms!important;scroll-behavior:auto!important}#fx{display:none}.circuit path{stroke-dashoffset:0}#hero h1,.hsub{opacity:1}}
+</style>
+</head>
+<body class="locked">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="dya" viewBox="0 0 64 54"><path d="M32 30C20 16 28 10 32 0c4 10 12 16 0 30z" fill="#ffb02e"/><path d="M32 30C27 22 30 18 32 12c2 6 5 10 0 18z" fill="#fff3b8"/><path d="M4 30h56q-4 22-28 22T4 30z" fill="#c8892a" stroke="#f3d77a" stroke-width="2"/></symbol>
+<symbol id="bel" viewBox="0 0 34 48"><path d="M17 0v8" stroke="#f3d77a" stroke-width="2"/><path d="M5 34q2-22 12-24 10 2 12 24z" fill="#d4a73a" stroke="#8f6a14" stroke-width="2"/><rect x="3" y="33" width="28" height="5" rx="2" fill="#f3d77a"/><circle cx="17" cy="42" r="4" fill="#8f6a14"/></symbol>
+<symbol id="line" viewBox="0 0 220 18"><path d="M0 9h86M134 9h86" stroke="#d4a73a" stroke-width="2"/><path d="M110 1l8 8-8 8-8-8z" fill="#f3d77a"/><circle cx="92" cy="9" r="3" fill="#d4a73a"/><circle cx="128" cy="9" r="3" fill="#d4a73a"/></symbol>
+</svg>
+
+<button id="snd" aria-pressed="false" aria-label="Turn devotional music on">♪</button>
+<div id="fx" aria-hidden="true"></div>
+
+<div id="intro" role="dialog" aria-label="स्वागत">
+ <div id="glow"></div>
+ <div class="door" id="dl"></div><div class="door" id="dr"></div>
+ <div class="garland"></div>
+ <div class="bells" aria-hidden="true"><svg class="bell"><use href="#bel"/></svg><svg class="bell"><use href="#bel"/></svg><svg class="bell"><use href="#bel"/></svg><svg class="bell"><use href="#bel"/></svg><svg class="bell"><use href="#bel"/></svg></div>
+ <div class="diyas" aria-hidden="true"><svg class="diya"><use href="#dya"/></svg><svg class="diya"><use href="#dya"/></svg><svg class="diya"><use href="#dya"/></svg><svg class="diya"><use href="#dya"/></svg><svg class="diya"><use href="#dya"/></svg></div>
+ <svg class="rangoli" viewBox="-100 -100 200 200" aria-hidden="true"><g fill="none" stroke-width="3"><circle r="94" stroke="#f3d77a"/><circle r="60" stroke="#ff8a00"/><circle r="26" stroke="#f3d77a"/><g stroke="#ffc21a"><path id="pt" d="M0-94Q18-60 0-30Q-18-60 0-94z"/><use href="#pt" transform="rotate(45)"/><use href="#pt" transform="rotate(90)"/><use href="#pt" transform="rotate(135)"/><use href="#pt" transform="rotate(180)"/><use href="#pt" transform="rotate(225)"/><use href="#pt" transform="rotate(270)"/><use href="#pt" transform="rotate(315)"/></g></g></svg>
+ <div class="ic">
+  <div class="ganesh"><div id="gimg"><svg viewBox="0 0 120 140" role="img" aria-label="ओम् गणेश"><path d="M10 138V60Q10 8 60 8T110 60V138Z" fill="#3a0810" stroke="#f3d77a" stroke-width="4"/><path d="M20 130V62Q20 18 60 18T100 62V130Z" fill="none" stroke="#d4a73a" stroke-width="2"/><g fill="#ff9fb0" stroke="#f3d77a"><path d="M60 128Q44 112 60 92Q76 112 60 128z"/><path d="M60 128Q32 122 30 100Q54 104 60 128z"/><path d="M60 128Q88 122 90 100Q66 104 60 128z"/></g><text x="60" y="78" text-anchor="middle" font-size="46" fill="#f3d77a" style="font-family:var(--hi)">ॐ</text></svg></div><p class="gname">॥ श्री गणपति बप्पा मोरया ॥</p></div>
+  <p class="mantra">॥ सीता राम सीता राम ॥</p>
+  <p class="sub">श्री राम जय राम जय जय राम</p>
+  <button class="btn" id="enter">✦ निमंत्रण खोलें ✦</button>
+  <button class="skip" id="skip">छोड़ें</button>
+ </div>
+</div>
+
+<main>
+<section id="hero" class="sec-dark"><div class="wrap">
+ <svg class="circuit" viewBox="0 0 300 200" role="img" aria-label="Golden circuit lines forming the outline of a house">
+  <path pathLength="1" d="M0 170H50V140H70M300 170H250V140H230M0 120H30V100H60M300 120H270V100H240M150 200V176"/>
+  <path class="h" pathLength="1" d="M55 100L150 25L245 100M72 90V176H228V90M128 176V126H172V176M150 25V10"/>
+ </svg>
+ <h1>TOMAR’S GRIHA PRAVESH</h1>
+ <p class="hsub">A New Home, A Blessed Beginning</p>
+ <div class="msg"><p>“With the divine blessings of Shri Ram and Maa Sita, the Ramchandra Singh Tomar Family cordially invites you to celebrate the sacred beginning of our new home.</p><p>As we embark on this beautiful new journey, we seek the blessings of the Almighty and the love and good wishes of our family and friends.”</p></div>
+ <div class="btns"><a class="btn" href="#events">VIEW CELEBRATION DETAILS</a><a class="btn ghost" href="#venue">FIND VENUE</a></div>
+</div></section>
+
+<section id="blessings"><div class="wrap">
+ <svg class="orn"><use href="#line"/></svg>
+ <h2>OUR GUIDING BLESSINGS</h2>
+ <div class="grid4" id="grid4"></div>
+ <p class="lead">“May their divine blessings fill our new home with peace, prosperity, good health, happiness, and love.”</p>
+</div></section>
+
+<section id="home"><div class="wrap">
+ <h2>OUR NEW HOME — OUR NEW BEGINNING</h2>
+ <div class="photo" id="photo"><div id="plx">
+ <svg viewBox="0 0 600 340" role="img" aria-label="Illustration of the new home" id="homeArt"><rect width="600" height="340" fill="#3a0810"/><circle cx="300" cy="120" r="150" fill="#f0b73c" opacity=".18"/><path d="M0 290h600v50H0z" fill="#2f4a33"/><path d="M130 150L300 50l170 100z" fill="#8a2432" stroke="#f3d77a" stroke-width="4"/><rect x="150" y="150" width="300" height="140" fill="#fbf3df" stroke="#d4a73a" stroke-width="4"/><path d="M270 290v-70q30-40 60 0v70z" fill="#5a0f1a" stroke="#d4a73a" stroke-width="4"/><g fill="#ffd36a" stroke="#8f6a14" stroke-width="3"><rect x="180" y="180" width="60" height="50"/><rect x="360" y="180" width="60" height="50"/></g><path d="M300 50V28" stroke="#f3d77a" stroke-width="4"/><path d="M300 28l22 8-22 8z" fill="#ff8a00"/><g><use href="#dya" x="120" y="278" width="40" height="34"/><use href="#dya" x="440" y="278" width="40" height="34"/></g><path d="M150 150q75 30 150 0t150 0" fill="none" stroke="#ffb300" stroke-width="8" stroke-dasharray="1 12" stroke-linecap="round"/></svg></div></div>
+ <p class="small">Add your own house photo: set <code>CONFIG.homePhoto</code> in the page source.</p>
+ <div class="msg" style="margin-top:20px"><p>“A home is built with dreams, strengthened by love, and blessed by the people who make life meaningful.</p><p>As we open the doors of our new home, we invite you to be part of this sacred beginning and share in our happiness.”</p></div>
+</div></section>
+
+<section id="events" class="sec-dark"><div class="wrap">
+ <h2>JOIN THE CELEBRATION</h2>
+ <div class="summary" id="summary"></div>
+ <div class="cards" id="cards"></div>
+</div></section>
+
+<section id="venue"><div class="wrap center">
+ <svg class="pin" viewBox="0 0 54 70" aria-hidden="true"><path d="M27 2C14 2 4 12 4 25c0 18 23 42 23 42s23-24 23-42C50 12 40 2 27 2z" fill="#d4a73a" stroke="#f3d77a" stroke-width="3"/><circle cx="27" cy="25" r="9" fill="#5a0f1a"/></svg>
+ <h2>VENUE</h2>
+ <div class="card" style="max-width:560px;margin:24px auto"><h3 id="vname"></h3><p id="vaddr"></p></div>
+ <a class="btn" id="maps" target="_blank" rel="noopener noreferrer">OPEN VENUE IN GOOGLE MAPS</a>
+ <p class="small">Opens Google Maps in a new tab.</p>
+</div></section>
+
+<section id="rsvp" class="sec-dark"><div class="wrap center">
+ <h2>WE WOULD LOVE TO HAVE YOU WITH US</h2>
+ <p class="lead">Let us know you are coming, directly on WhatsApp.</p>
+ <p class="center"><a class="btn wa" id="wa" target="_blank" rel="noopener noreferrer">CONFIRM YOUR PRESENCE ON WHATSAPP</a></p>
+ <form id="rsvpForm">
+  <p class="lead" style="margin-bottom:0">Or fill in your details:</p>
+  <div><label for="gn">Guest name</label><input id="gn" required autocomplete="name"></div>
+  <div><label for="ga">Number of attendees</label><input id="ga" type="number" min="1" max="50" value="1" required></div>
+  <div><label for="gm">Confirmation message</label><textarea id="gm" rows="3">We would love to join the celebration.</textarea></div>
+  <button class="btn wa" type="submit">SEND RSVP VIA WHATSAPP</button>
+  <p class="small">This opens WhatsApp with your message ready to send. Nothing is saved on this website.</p>
+ </form>
+</div></section>
+
+<section id="close"><div class="wrap">
+ <p class="mantra">॥ सीता राम सीता राम ॥</p>
+ <p class="lead">“Thank you for being a part of our new beginning.”</p>
+ <p class="lead" style="margin-top:18px">“With love, gratitude, and divine blessings,</p>
+ <p class="sign" id="fam"></p>
+ <p class="final">Tomar’s Griha Pravesh — A New Home, A Blessed Beginning.</p>
+ <a class="btn" href="#" id="top">BACK TO TOP</a>
+ <div class="diyas" style="position:static;margin-top:44px"><svg class="diya"><use href="#dya"/></svg><svg class="diya"><use href="#dya"/></svg><svg class="diya"><use href="#dya"/></svg></div>
+</div></section>
+</main>
+
+<script>
+/* ===== EDIT HERE ===== */
+const CONFIG={
+ family:"Ramchandra Singh Tomar Family",
+ whatsapp:"919373333127",
+ venue:{name:"Aaiji Aura City",address:"Lohegaon, Pune – 411047, Maharashtra, India",
+  maps:"https://www.google.com/maps/search/?api=1&query=Aaiji%20Aura%20City%2C%20Lohegaon%2C%20Pune%20411047"},
+ paath:{title:"Ramayan Paath and Griha Pravesh Celebration",date:"Saturday, 21 November 2026",duration:"24 hours",start:"[To be updated]"},
+ lunch:{title:"Family Lunch Gathering",date:"Sunday, 22 November 2026",time:"5:00 PM – 9:00 PM"},
+ musicSrc:"ghar-me-padharo-gajanan-ji.mp3",   /* your song file, kept beside index.html; leave "" for the built-in tune */
+ ganeshImg:"",           /* optional: your Ganapati Bappa photograph, e.g. "ganesh.jpg" */
+ homePhoto:"",            /* e.g. "house.jpg" or a data: URL */
+ blessings:[              /* add an "img" path to any entry to use your own portrait */
+  {en:"Shri Ram",hi:"श्री राम",img:"",art:"bow"},
+  {en:"Maa Sita",hi:"माँ सीता",img:"",art:"lotus"},
+  {en:"Lakshman Ji",hi:"लक्ष्मण जी",img:"",art:"quiver"},
+  {en:"Hanuman Ji",hi:"हनुमान जी",img:"",art:"gada"}]
+};
+/* ===================== */
+const $=s=>document.querySelector(s);
+const wa=t=>`https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(t)}`;
+const art={
+ bow:'<path d="M60 30Q150 100 60 170" fill="none" stroke="#f3d77a" stroke-width="5"/><path d="M60 30L60 170M60 100H150" stroke="#ffe6a0" stroke-width="3"/><path d="M150 100l-12-8v16z" fill="#f3d77a"/><circle cx="105" cy="55" r="1" />',
+ lotus:'<g fill="#ff9fb0" stroke="#f3d77a" stroke-width="2"><path d="M100 160Q70 120 100 60Q130 120 100 160z"/><path d="M100 160Q50 140 52 90Q96 110 100 160z"/><path d="M100 160Q150 140 148 90Q104 110 100 160z"/><path d="M100 160Q30 160 20 120Q70 120 100 160z"/><path d="M100 160Q170 160 180 120Q130 120 100 160z"/></g>',
+ quiver:'<g stroke="#f3d77a" stroke-width="4" fill="none"><rect x="85" y="70" width="30" height="90" rx="6" fill="#8a2432"/><path d="M92 70V35M100 70V25M108 70V35"/><path d="M92 35l-5 8h10zM100 25l-5 8h10zM108 35l-5 8h10z" fill="#f3d77a"/></g>',
+ gada:'<g fill="#f3d77a" stroke="#8f6a14" stroke-width="3"><circle cx="100" cy="60" r="34"/><rect x="92" y="90" width="16" height="80" rx="6"/></g><path d="M80 60h40M100 40v40" stroke="#8f6a14" stroke-width="3"/>'};
+$('#grid4').innerHTML=CONFIG.blessings.map(b=>`<figure class="frame" style="margin:0">${b.img?`<img src="${b.img}" alt="${b.en}" loading="lazy">`:`<svg viewBox="0 0 200 190" role="img" aria-label="${b.en} symbol (replace with your portrait)"><circle cx="100" cy="95" r="80" fill="#f0b73c" opacity=".2"/>${art[b.art]}</svg>`}<figcaption><b>${b.en}</b><span>${b.hi}</span></figcaption></figure>`).join('');
+if(CONFIG.ganeshImg)$('#gimg').innerHTML=`<img src="${CONFIG.ganeshImg}" alt="Shri Ganesh">`;
+if(CONFIG.homePhoto)$('#plx').innerHTML=`<img src="${CONFIG.homePhoto}" alt="Our new home" loading="lazy">`;
+const p=CONFIG.paath,l=CONFIG.lunch;
+$('#summary').innerHTML=`<div><b>21 November 2026</b>24-hour Ramayan Paath</div><div><b>22 November 2026</b>Lunch gathering, 5 PM to 9 PM</div>`;
+const cal='<svg class="icon" viewBox="0 0 64 64" aria-hidden="true"><rect x="8" y="12" width="48" height="46" rx="6" fill="#fff" stroke="#5a0f1a" stroke-width="3"/><path d="M8 26h48" stroke="#5a0f1a" stroke-width="3"/><path d="M20 6v12M44 6v12" stroke="#d4a73a" stroke-width="4" stroke-linecap="round"/><use href="#dya" x="22" y="32" width="20" height="18"/></svg>';
+const thali='<svg class="thali" viewBox="0 0 150 150" role="img" aria-label="Illustration of a festive thali"><circle cx="75" cy="75" r="72" fill="#d4a73a" stroke="#8f6a14" stroke-width="4"/><circle cx="75" cy="75" r="58" fill="#f3d77a"/><g stroke="#8f6a14" stroke-width="2"><circle cx="75" cy="38" r="15" fill="#e8a020"/><circle cx="108" cy="62" r="14" fill="#a02a2a"/><circle cx="96" cy="102" r="14" fill="#2f4a33"/><circle cx="54" cy="102" r="14" fill="#ff8a00"/><circle cx="42" cy="62" r="14" fill="#fff3d0"/><circle cx="75" cy="75" r="16" fill="#fbf3df"/></g></svg>';
+$('#cards').innerHTML=`<article class="card">${cal}<h3>${p.title}</h3><p class="date">${p.date}</p><div class="meta"><span>Duration: <span class="pill">${p.duration}</span></span><span>Start time: <span class="pill">${p.start}</span></span></div><p>“On this auspicious occasion, we will hold a continuous 24-hour Ramayan Paath to seek divine blessings for our new home.</p><p>May the sacred verses of the Ramayan bring peace, positivity, and prosperity to our home and everyone who joins us.”</p><div class="note">The Ramayan Paath continues for 24 hours, which is why the lunch gathering is arranged for the following day.</div></article>
+<article class="card lunch">${thali}<h3>${l.title}</h3><p class="date">${l.date}</p><div class="meta"><span>Time: <span class="pill" style="background:var(--green)">${l.time}</span></span></div><p>“Following the 24-hour Ramayan Paath, we warmly invite you to join our family gathering for a delightful meal, heartfelt conversations, and beautiful memories.</p><p>Your presence and blessings will make this celebration even more special.”</p></article>`;
+$('#vname').textContent=CONFIG.venue.name;$('#vaddr').textContent=CONFIG.venue.address;$('#maps').href=CONFIG.venue.maps;
+$('#fam').textContent=CONFIG.family+"”";
+$('#wa').href=wa("Namaste! I received the invitation to Tomar’s Griha Pravesh. Thank you for inviting me. I would like to confirm my presence for the celebration.");
+$('#rsvpForm').addEventListener('submit',e=>{e.preventDefault();
+ const t=`Namaste! RSVP for Tomar’s Griha Pravesh.\nName: ${$('#gn').value}\nNumber of attendees: ${$('#ga').value}\nMessage: ${$('#gm').value}`;
+ const a=document.createElement('a');a.href=wa(t);a.target='_blank';a.rel='noopener noreferrer';document.body.appendChild(a);a.click();a.remove();});
+$('#top').addEventListener('click',e=>{e.preventDefault();scrollTo({top:0})});
+/* particles */
+const reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
+if(!reduce){const fx=$('#fx');for(let i=0;i<34;i++){const s=document.createElement('i');if(i%3==0)s.className='p';const z=i%3==0?10+Math.random()*8:2+Math.random()*4;
+ s.style.cssText=`left:${Math.random()*100}%;width:${z}px;height:${z}px;--dx:${(Math.random()-.5)*160}px;animation-duration:${9+Math.random()*12}s;animation-delay:${-Math.random()*20}s`;fx.appendChild(s)}}
+/* audio (only after user interaction) */
+let ac,drone,aud,on=false;
+function ctx(){ac=ac||new (window.AudioContext||window.webkitAudioContext)();if(ac.state==='suspended')ac.resume();return ac}
+function bell(){try{const c=ctx(),t=c.currentTime;[[523,.25,3.2],[1046,.12,2.4],[1568,.06,1.6],[2093,.03,1]].forEach(([f,v,d])=>{const o=c.createOscillator(),g=c.createGain();o.frequency.value=f;g.gain.setValueAtTime(0,t);g.gain.linearRampToValueAtTime(v,t+.01);g.gain.exponentialRampToValueAtTime(.0001,t+d);o.connect(g).connect(c.destination);o.start(t);o.stop(t+d)})}catch(e){}}
+function toggleSound(){try{const c=ctx();on=!on;
+ if(CONFIG.musicSrc){aud=aud||Object.assign(new Audio(CONFIG.musicSrc),{loop:true,volume:.6});on?aud.play().catch(()=>{}):aud.pause()}else if(on){const g=c.createGain();g.gain.value=0;g.gain.linearRampToValueAtTime(.05,c.currentTime+2);g.connect(c.destination);
+  const os=[130.8,196,261.6,329.6].map((f,i)=>{const o=c.createOscillator();o.type=i?'sine':'triangle';o.frequency.value=f;const m=c.createGain();m.gain.value=i?.5:1;o.connect(m).connect(g);o.start();return o});
+  const m=c.createGain();m.gain.value=.11;m.connect(c.destination);const F={C:261.6,D:293.7,E:329.6,G:392,A:440,H:523.3},B=.6;
+  const ph=[['E',1],['E',1],['G',1],['G',1],['A',1],['G',1],['E',2],['D',1],['E',1],['G',1],['E',1],['C',2],['C',1],['D',1],['E',1],['G',1],['A',1],['H',1],['A',2],['G',1],['G',1],['E',1],['D',1],['C',4]];
+  const note=(f,t,d)=>{const o=c.createOscillator(),o2=c.createOscillator(),lp=c.createBiquadFilter(),e=c.createGain();o.type='sawtooth';o2.type='sawtooth';o.frequency.value=f;o2.frequency.value=f*1.006;lp.type='lowpass';lp.frequency.value=1500;e.gain.setValueAtTime(0,t);e.gain.linearRampToValueAtTime(.35,t+.06);e.gain.setValueAtTime(.3,t+d*.8);e.gain.linearRampToValueAtTime(0,t+d);o.connect(lp);o2.connect(lp);lp.connect(e).connect(m);o.start(t);o2.start(t);o.stop(t+d+.05);o2.stop(t+d+.05)};
+  const thump=t=>{const o=c.createOscillator(),e=c.createGain();o.frequency.setValueAtTime(150,t);o.frequency.exponentialRampToValueAtTime(60,t+.18);e.gain.setValueAtTime(.9,t);e.gain.exponentialRampToValueAtTime(.001,t+.25);o.connect(e).connect(m);o.start(t);o.stop(t+.3)};
+  let nt=c.currentTime+.3;const total=ph.reduce((s,n)=>s+n[1],0);
+  const sched=()=>{while(nt<c.currentTime+2){let t=nt;ph.forEach(([n,b])=>{note(F[n],t,b*B*.95);t+=b*B});for(let i=0;i<total;i+=2)thump(nt+i*B);nt+=total*B}};
+  sched();const tm=setInterval(sched,1000);
+  drone={g,os,m,tm}}else if(drone){const d=drone;clearInterval(d.tm);d.g.gain.linearRampToValueAtTime(0,c.currentTime+.8);d.m.gain.linearRampToValueAtTime(0,c.currentTime+.8);setTimeout(()=>d.os.forEach(o=>o.stop()),900);drone=null}
+ const b=$('#snd');b.setAttribute('aria-pressed',on);b.setAttribute('aria-label','Turn devotional music '+(on?'off':'on'));b.textContent=on?'♫':'♪';b.style.background=on?'#8a2432':'';}catch(e){}}
+$('#snd').addEventListener('click',toggleSound);
+/* intro */
+/* music starts by itself: tries on load, otherwise on the visitor's first tap, touch or key press (browsers block sound until then) */
+function startMusic(e){if(on||!CONFIG.musicSrc)return;if(e&&e.target&&e.target.closest&&e.target.closest('#snd'))return;
+ try{aud=aud||Object.assign(new Audio(CONFIG.musicSrc),{loop:true,volume:.6});aud.play().then(()=>{on=true;const b=$('#snd');b.setAttribute('aria-pressed',true);b.setAttribute('aria-label','Turn devotional music off');b.textContent='♫';b.style.background='#8a2432';['pointerdown','touchend','keydown','click'].forEach(t=>removeEventListener(t,startMusic,true))}).catch(()=>{})}catch(err){}}
+['pointerdown','touchend','keydown','click'].forEach(t=>addEventListener(t,startMusic,true));
+startMusic();
+const intro=$('#intro');
+function finish(){intro.classList.add('gone');document.body.classList.remove('locked');document.body.classList.add('entered');setTimeout(()=>intro.remove(),1100)}
+$('#enter').addEventListener('click',()=>{bell();if(!on)toggleSound();intro.classList.add('open');setTimeout(finish,reduce?300:2700)});
+$('#skip').addEventListener('click',finish);
+$('#enter').focus({preventScroll:true});
+/* subtle parallax on home photo */
+if(!reduce)addEventListener('scroll',()=>{const r=$('#photo').getBoundingClientRect();if(r.bottom>0&&r.top<innerHeight){$('#plx').style.transform=`translateY(${(r.top-innerHeight/2)*-.06}px) scale(1.12)`}},{passive:true});
+</script>
+</body>
+</html>
